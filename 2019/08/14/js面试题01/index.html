@@ -8,7 +8,7 @@
   <link rel="icon" href="/images/favicon.ico"> 
   <title>
     
-      2019-08-13 hexo搭建博客小记 | mongoの后花园
+      js面试题01 | mongoの后花园
     
   </title>
   <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
@@ -92,38 +92,23 @@
 </header>
 
     <div id="article-banner">
-  <h2>2019-08-13 hexo搭建博客小记</h2>
+  <h2>js面试题01</h2>
 </div>
 
 <main class="app-body">
   <article class="post-article">
-    <section class="markdown-content"   dir=""><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo init</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装hexo部署插件"><a href="#安装hexo部署插件" class="headerlink" title="安装hexo部署插件"></a>安装hexo部署插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; npm install</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="写博文"><a href="#写博文" class="headerlink" title="写博文"></a>写博文</h2><h3 id="在根目录下，创建一篇文章"><a href="#在根目录下，创建一篇文章" class="headerlink" title="在根目录下，创建一篇文章"></a>在根目录下，创建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo new post <span class="string">"2019-08-13 hexo博客搭建小记"</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="先清除再生成静态网页并部署到线上github上"><a href="#先清除再生成静态网页并部署到线上github上" class="headerlink" title="先清除再生成静态网页并部署到线上github上"></a>先清除再生成静态网页并部署到线上github上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="先清除再生成静态网页并部署到线上github上-1"><a href="#先清除再生成静态网页并部署到线上github上-1" class="headerlink" title="先清除再生成静态网页并部署到线上github上"></a>先清除再生成静态网页并部署到线上github上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="如何在另一台电脑上面写作"><a href="#如何在另一台电脑上面写作" class="headerlink" title="如何在另一台电脑上面写作"></a>如何在另一台电脑上面写作</h2><p>~ 1、先在github上面的博客网站建立一个hexo分支<br>~ 2、再将博客网站克隆到本地<br>~ 3、将博客网站中的隐藏的.git文件复制到hexo博客发布的根目录下<br>~ 4、再hexo博客发布的根目录下切换到hexo分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git checkout -b hexo</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"备份"</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+    <section class="markdown-content"   dir=""><h2 id="No-1-实现bindleft函数参数的部分绑定"><a href="#No-1-实现bindleft函数参数的部分绑定" class="headerlink" title="No.1 实现bindleft函数参数的部分绑定"></a>No.1 实现bindleft函数参数的部分绑定</h2><p>  <strong>desc</strong>:<br>  function bindleft () {<br>    // 1.完成这里的代码 2.绑定参数的个数以传入的为准<br>  }<br>  使用方法：fn1 = (a, b, c, d) =&gt; a - b×c + d;<br>  fn2 = bindleft(fn1, 1, 2);<br>  fn2(3, 4);<br>  结果是 1 - 2×3 + 4 = -1  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bindleft</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> fn = [].shift.call(<span class="built_in">arguments</span>),</span><br><span class="line">        left_args = [].slice.call(<span class="built_in">arguments</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> total_args = left_args.concat([].slice.call(<span class="built_in">arguments</span>));</span><br><span class="line">        fn.apply(<span class="literal">null</span>, total_args)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fn1 = <span class="function">(<span class="params">a, b, c, d</span>) =&gt;</span> a - b*c + d;</span><br><span class="line"><span class="keyword">var</span> fn2 = bindleft(fn1, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line">fn2(<span class="number">3</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
 
 </section>
     
-    <p class="post-date" dir="">August 13, 2019</p>
+    <p class="post-date" dir="">August 14, 2019</p>
 
     
       <div class="tags"    dir="">
         
-  <a href="/tags#tool" >
-    <span class="tag-code">tool</span>
+  <a href="/tags#javascript" >
+    <span class="tag-code">javascript</span>
   </a>
 
       </div>
@@ -136,7 +121,7 @@
       <script>
         var disqus_shortname = 'mongo';
         
-        var disqus_url = 'https://mongonice.github.io/2019/08/13/2019-08-13-hexo搭建博客小记/';
+        var disqus_url = 'https://mongonice.github.io/2019/08/14/js面试题01/';
         
         (function(){
           var dsq = document.createElement('script');
@@ -157,7 +142,7 @@
 
 <script>
   (function () {
-    var url = 'https://mongonice.github.io/2019/08/13/2019-08-13-hexo搭建博客小记/';
+    var url = 'https://mongonice.github.io/2019/08/14/js面试题01/';
     $('#article-banner').geopattern(url)
     $('.header').removeClass('fixed-header')
 
